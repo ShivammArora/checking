@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <krpano version="1.0.8.15">
+
+  <action name="open_pdf">
+    openurl(get(querystring.id), _self);
+  </action>
+
   <layer
     name="js_loader"
     type="container"
     visible="false"
-    onloaded="js(
-      var id = new URLSearchParams(location.search).get('id') || 'reservationhatao001';
-      openurl('https://shivammarora.github.io/newone/' + encodeURIComponent(id) + '.pdf', '_self');
-    );"
+    onloaded="open_pdf();"
   />
+
 </krpano>
