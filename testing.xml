@@ -1,12 +1,11 @@
 <krpano>
-  <layer name="test_image"
- type="image"
- url="https://i.imgur.com/33u197F.jpg"
- align="center"
- width="50%"
- height="auto"
- keep="true"
- enabled="true"
- visible="true"
- />
+  <text name="hello_world" 
+ align="center" 
+ width="100%" 
+ height="auto">
+ <style name="my_text_style" 
+ fontsize="24pt" 
+ color="#FF0000" />
+ Hello World!
+  </text>
 </krpano>
