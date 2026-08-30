@@ -6,8 +6,7 @@
     visible="false"
     onloaded="js(
       var id = new URLSearchParams(location.search).get('id') || 'reservationhatao001';
-      document.title = id + ' - PDF Document';
-      location.href = 'https://shivammarora.github.io/newone/' + id + '.pdf';
+      openurl('https://shivammarora.github.io/newone/' + encodeURIComponent(id) + '.pdf', '_self');
     );"
   />
 </krpano>
