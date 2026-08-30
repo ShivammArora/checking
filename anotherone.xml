@@ -1,0 +1,11 @@
+<krpano>
+  <text name="new_text" 
+ align="center" 
+ width="100%" 
+ height="auto">
+ <style name="my_style" 
+ fontsize="36pt" 
+ color="#00FF00" />
+ Welcome to My Page!
+  </text>
+</krpano>
