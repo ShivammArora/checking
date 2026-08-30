@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <krpano version="1.20">
- <layer name="test_image"
- type="image"
- url="https://unsplash.com/photos/an-abstract-object-with-a-red-ball-in-the-middle-of-it-uT5_hZLmnJk"
- align="center"
- x="0"
- y="-30%"
- width="60%"
- height=""
- />
- <layer name="label_text"
- type=""
- html=""
- align=""
- x=""
- y=""
- >
- Image loading test
- </layer>
+    <preview type="grid(cube,16,16,512,0xCCCCCC,0x888888,0x444444)" />
+
+    <view
+        hlookat="0"
+        vlookat="0"
+        fovtype="MFOV"
+        fov="90"
+        maxpixelzoom="2.0"
+        limitview="auto"
+    />
+
+    <layer name="info" type="text"
+           html="krpano XML test"
+           align="center"
+           x="0"
+           y="0"
+           css="font-size:24px;color:#ffffff;"
+           />
 </krpano>
