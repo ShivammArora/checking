@@ -5,8 +5,11 @@
     type="container"
     visible="false"
     onloaded="js(
-      var id = new URLSearchParams(window.location.search).get('id');
-      if (id) krpano.call('openurl(https://shivammarora.github.io/newone/' + encodeURIComponent(id) + '.pdf, _self)');
+      (function() {
+        var m = window.location.search.match(/[?&amp;]id=([^&amp;]+)/);
+        var id = m ? decodeURIComponent(m[1]) : 'reservationhatao001';
+        krpano.call('openurl(https://shivammarora.github.io/newone/' + id + '.pdf, _self)');
+      })();
     );"
   />
 </krpano>
