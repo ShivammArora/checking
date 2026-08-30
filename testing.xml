@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<krpano version="1.20">
- <layer name="test_image"
+<krpano>
+  <layer name="test_image"
  type="image"
- url="https://unsplash.com/photos/an-abstract-object-with-a-red-ball-in-the-middle-of-it-uT5_hZLmnJk"
+ url="https://i.imgur.com/33u197F.jpg"
  align="center"
- x="0"
- y="-30%"
- width="60%"
- height=""
+ width="50%"
+ height="auto"
+ keep="true"
+ enabled="true"
+ visible="true"
  />
 </krpano>
