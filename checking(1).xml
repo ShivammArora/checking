@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <krpano version="1.20">
-    <preview type="grid(cube,16,16,512,0xCCCCCC,0x888888,0x444444)" />
 
-    <view
-        hlookat="0"
-        vlookat="0"
-        fovtype="MFOV"
-        fov="90"
-        maxpixelzoom="2.0"
-        limitview="auto"
-    />
-
-    <layer name="info" type="text"
-           html="krpano XML test"
+    <layer name="test_image"
+           type="image"
+           url="https://airandspace.si.edu/sites/default/files/images/panoramas/files/360/interior/A19610122000_1/A19610122000cp37GrummanWildcatdata/thumbnail.jpg"
            align="center"
            x="0"
            y="0"
-           css="font-size:24px;color:#ffffff;"
+           width="60%"
+           height="auto"
            />
+
+    <layer name="label"
+           type="text"
+           html="Image loading test"
+           align="center"
+           x="0"
+           y="42%"
+           css="font-size:20px;color:#ffffff;"
+           />
+
 </krpano>
